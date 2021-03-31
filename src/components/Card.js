@@ -2,7 +2,7 @@ import React from 'react'
 import { useGlobalContext } from '../context'
 
 export const Card = ({_id, name, cost, category, img}) => {
-    
+    const {  } = useGlobalContext()
     return (
         <article>
             <img src={img.url} alt={name} />

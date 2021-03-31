@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { AppProvider } from './context';
+import React from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+import GlobalStyle from "./style/globalStyles";
+
+import { AppProvider } from "./context";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AppProvider>
+  <AppProvider>
+    <GlobalStyle />
     <App />
-    </AppProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </AppProvider>,
+  document.getElementById("root")
 );
