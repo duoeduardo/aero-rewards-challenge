@@ -1,5 +1,5 @@
 import React, { useState, useContext, useReducer, useEffect } from "react";
-import reducer from "./reducer";
+import reducer from "../reducer";
 const productItems = [];
 
 const token = process.env.REACT_APP_API_KEY;
